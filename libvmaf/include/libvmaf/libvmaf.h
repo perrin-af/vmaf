@@ -28,8 +28,10 @@
 #include "libvmaf/feature.h"
 
 enum VmafLogLevel {
-    VMAF_LOG_LEVEL_NONE = 0,
-    VMAF_LOG_LEVEL_INFO = 1 << 0,
+    VMAF_LOG_LEVEL_QUIET,
+    VMAF_LOG_LEVEL_ERROR,
+    VMAF_LOG_LEVEL_WARNING,
+    VMAF_LOG_LEVEL_INFO,
 };
 
 enum VmafOutputFormat {
